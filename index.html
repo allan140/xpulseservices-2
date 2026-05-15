@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="OPOLOT ALLAN" content="dj website">
+    <meta name="keywords" content="login form,about us,home,services">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form | Login</title>
+    <link rel=" stylesheet " href="style.css ">
+    <link rel="stylesheet " href="node.js ">
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css ">
+
+</head>
+
+<br>
+
+<body>
+    <nav class="navbar ">
+        <div class=" nav-wrap ">
+            <div class="nav-left ">
+                <a href="index.html " class="nav-logo ">
+                    <img src="images/logo.jpg " alt="Logo ">
+                    <span></span>
+                </a>
+                <ul class="nav-menu ">
+                    <li><a href="index.html "><i class="fas fa-home "></i> Home</a></li>
+                    <li><a href="djservices.html "><i class="fa-solid fa-headphones "></i> Dj Services</a></li>
+                    <li><a href="partyservices.html "><i class="fa-solid fa-champagne-glasses "></i> Party Services</a></li>
+                </ul>
+            </div>
+            <div class="search-bar ">
+                <span></span>
+                <input type="text " placeholder="Search... ">
+            </div>
+            <button class="menu-btn ">☰</button> 
+        </div>
+    </nav>
+
+
+    <section class="login-section ">
+
+        <section class="video-section ">
+            <video src="videos/ext deco1.mp4 " width="100% " height="auto " autoplay muted loop></video>
+        </section>
+        <div class="login-container ">
+            <div class="login-header ">
+                <h2 onmouseover="this.style.color='blue'">Welcome</h2>
+                <h1 onclick="this.style.color='black'">X Pulse Services</h1>
+            </div>
+
+
+            <form class="login-form ">
+                <form action="/" method="GET">
+                    <div class="form-group ">
+                        <label for="name "><i class="fa-solid fa-address-card "></i>Name:
+                    <input type="text " id="name " placeholder="Enter your full name " required></label>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="email "><i class="fa-regular fa-envelope "></i>E-mail:
+                    <input type="email " id="email " placeholder="name@gmail.com " required></label>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="contact "><i class="fa-solid fa-mobile-button "></i>Phone:
+                    <input type="tel " id="contact " placeholder="+256-708-604-303 " required></label>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="account-type "> <i class="fa-solid fa-table-list "></i>Group:
+                    <select id="account-type " required>
+            <option value=" ">Select</option>
+            <option value="customer ">Customer</option>
+            <option value="restaurant ">Party Owner</option>
+            <option value="farmer ">Party Dealer</option>
+            <option value="distributor ">Event Planner</option>
+            <option value="retailer ">Retailer</option></label>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-regular fa-user"></i>Gender:
+                    <div class="radio-group">
+                        <label class="radio-option">
+              <input type="radio" name="gender" value="male" required> Male</label>
+
+                        </label>
+                        <label class="radio-option">
+              <input type="radio" name="gender" value="female" required>
+              Female
+            </label>
+                    </div>
+        </div>
+
+        <div class="form-group ">
+            <label for="password "><i class="fa-solid fa-unlock "></i> Token:
+            <input type="password " id="password " placeholder="Enter your password " required></label>
+        </div>
+        <div class="form-group ">
+            <label for="message "><i class="fa-regular fa-comment-dots "></i>Message:
+            <textarea id="message " placeholder="Type your message here " rows="2 "></textarea></label>
+        </div>
+
+
+        <button type="submit " class="login-btn ">Sign In</button>
+
+
+        <p class="signup-link ">
+            New to X Pulse Services? <a href="# ">Create account</a>
+        </p>
+        </form>
+        </div>
+        </form>
+    </section>
+
+    <footer class="site-footer ">
+        <div class="footer-content ">
+            <div class="footer-section ">
+                <h4>
+                    Pulse Events
+                </h4>
+                <p>Software | 3D Logos | Party Bookings
+                    <br>Dj Skins |Dj Drops
+                </p>
+            </div>
+            <div class="footer-section ">
+                <h4>Reach us</h4>
+                <p>
+                    Location:Kirinya-Namataba Road
+                    <br>Contact: +256-708-604-4303 <br>Gmail:xp7812490@gmail.com </p>
+            </div>
+            <div class="footer-section ">
+                <h4>Follow Us</h4>
+                <p>On our social media handles</p>
+                <div class="social-icons ">
+                    <a href="https://tiktok/en.com "><i class="fa-brands fa-tiktok "></i></a>
+                    <a href="https://twitter.com "><i class="fa-brands fa-x-twitter "></i></a>
+                    <a href="https://facebook.com "><i class="fa-brands fa-facebook "></i></a>
+                    <a href="https://youtube.com "><i class="fa-brands fa-youtube "></i></a>
+                </div>
+            </div>
+        </div>
+        <div class=" footer-bottom ">
+            <p>&copy; 2026 Rare X Pulse. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('show');
+        });
+    </script>
+</body>
